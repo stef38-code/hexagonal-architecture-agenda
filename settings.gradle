@@ -1,0 +1,5 @@
+rootProject.name = 'hexagonal-architecture-agenda'
+include 'application'
+include 'domain'
+include 'infrastructure'
+
