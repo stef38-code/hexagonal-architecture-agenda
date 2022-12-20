@@ -1,5 +1,6 @@
 package step.definitions;
 
+import step.definitions.mocks.AjoutPersonnePortMock;
 import io.cucumber.java.Before;
 import io.cucumber.java.DataTableType;
 import io.cucumber.java.fr.Alors;
@@ -10,7 +11,6 @@ import org.hexagonal.architecture.agenda.domain.model.Personne;
 import org.hexagonal.architecture.agenda.domain.ports.inbound.AjoutPersonneUseCase;
 import org.hexagonal.architecture.agenda.domain.ports.outbound.AjoutPersonnePort;
 import org.hexagonal.architecture.agenda.domain.services.AjoutPersonneService;
-import step.definitions.mocks.AjoutPersonnePortMock;
 
 import java.time.LocalDate;
 import java.util.List;

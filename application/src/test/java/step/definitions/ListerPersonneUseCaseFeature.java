@@ -8,7 +8,7 @@ import org.hexagonal.architecture.agenda.domain.model.Personne;
 import org.hexagonal.architecture.agenda.domain.ports.inbound.ListerPersonneUseCase;
 import org.hexagonal.architecture.agenda.domain.ports.outbound.ListerPersonnePort;
 import org.hexagonal.architecture.agenda.domain.services.ListerPersonneService;
-import step.definitions.mocks.ListerPersonnePortMock;
+import org.hexagonal.architecture.agenda.infrastructure.mock.ListerPersonnePortMock;
 
 import java.util.List;
 
