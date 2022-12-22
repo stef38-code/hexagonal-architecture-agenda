@@ -3,19 +3,16 @@ package org.hexagonal.architecture.agenda.infrastructure.entity;
 import java.time.LocalDate;
 
 public class PersonneEntity {
-    private  String id;
-    private String nom;
-    private  String prenom;
-    private  LocalDate dnaiss;
+    private final String id;
+    private final String nom;
+    private final String prenom;
+    private final LocalDate dateNaiss;
 
-    public PersonneEntity() {
-    }
-
-    public PersonneEntity(String id, String nom, String prenom, LocalDate dnaiss) {
+    public PersonneEntity(String id, String nom, String prenom, LocalDate dateNaiss) {
         this.id = id;
         this.nom = nom;
         this.prenom = prenom;
-        this.dnaiss = dnaiss;
+        this.dateNaiss = dateNaiss;
     }
 
     public String getId() {
@@ -30,7 +27,7 @@ public class PersonneEntity {
         return prenom;
     }
 
-    public LocalDate getDnaiss() {
-        return dnaiss;
+    public LocalDate getDateNaiss() {
+        return dateNaiss;
     }
 }

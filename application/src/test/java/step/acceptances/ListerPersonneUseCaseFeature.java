@@ -1,7 +1,8 @@
-package step.definitions;
+package step.acceptances;
 
 import io.cucumber.java.Before;
 import io.cucumber.java.fr.Alors;
+import io.cucumber.java.fr.Et;
 import io.cucumber.java.fr.Sachantqu;
 import org.assertj.core.api.Assertions;
 import org.hexagonal.architecture.agenda.domain.model.Personne;
@@ -40,4 +41,8 @@ public class ListerPersonneUseCaseFeature {
         Assertions.assertThat(personnes).isNotEmpty();
     }
 
+    @Et("la liste a un taille de {int}")
+    public void laListeAUnTailleDe(int taille) {
+        Assertions.assertThat(personnes).hasSize(taille);
+    }
 }

@@ -1,6 +1,6 @@
-package step.definitions;
+package step.acceptances;
 
-import step.definitions.mocks.AjoutPersonnePortMock;
+import org.hexagonal.architecture.agenda.infrastructure.mock.AjoutPersonnePortMock;
 import io.cucumber.java.Before;
 import io.cucumber.java.DataTableType;
 import io.cucumber.java.fr.Alors;
