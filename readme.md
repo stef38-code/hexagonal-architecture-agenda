@@ -8,6 +8,8 @@
 
 
 # Ressources du projet
+## Me
+https://github.com/stef38-code/hexagonal
 ## Le projet ce base sur l'exemple : 
 [Martin Fowler](https://martinfowler.com/bliki/BoundedContext.html)
 
