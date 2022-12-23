@@ -1,4 +1,6 @@
 plugins {
+    id 'org.springframework.boot' version '2.7.7'
+    id 'io.spring.dependency-management' version '1.1.0'
     id 'java'
 }
 
@@ -12,10 +14,18 @@ ext {
     junitVersion = '5.9.0'
     cucumberVersion = '7.8.1'
 }
-
 dependencies {
+    implementation 'org.springframework.boot:spring-boot-starter-actuator'
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+
+    implementation 'org.assertj:assertj-core:3.23.1'
+    implementation 'org.apache.commons:commons-lang3:3.12.0'
+    implementation 'org.apache.commons:commons-collections4:4.4'
+
     implementation project(':domain')
     implementation project(':infrastructure')
+
+    testImplementation 'org.springframework.boot:spring-boot-starter-test'
 
     testImplementation "org.junit.jupiter:junit-jupiter-api:${junitVersion}"
     testRuntimeOnly "org.junit.jupiter:junit-jupiter-engine:${junitVersion}"
@@ -25,10 +35,9 @@ dependencies {
     testImplementation "io.cucumber:cucumber-junit:${cucumberVersion}"
     testImplementation "org.junit.vintage:junit-vintage-engine:${junitVersion}"
 
-    implementation 'org.assertj:assertj-core:3.23.1'
-    implementation 'org.apache.commons:commons-lang3:3.12.0'
-    implementation 'org.apache.commons:commons-collections4:4.4'
+
 }
+
 
 test {
     useJUnitPlatform()
